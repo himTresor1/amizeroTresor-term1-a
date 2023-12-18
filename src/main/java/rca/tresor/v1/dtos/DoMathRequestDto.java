@@ -1,6 +1,5 @@
-package rca.devopsexam.v1.dtos;
+package rca.tresor.v1.dtos;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data

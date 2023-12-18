@@ -1,4 +1,4 @@
-package rca.devopsexam.v1.exceptions;
+package rca.tresor.v1.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

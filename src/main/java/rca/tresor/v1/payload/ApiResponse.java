@@ -1,4 +1,4 @@
-package rca.devopsexam.v1.payload;
+package rca.tresor.v1.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
