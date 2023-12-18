@@ -7,8 +7,7 @@ import rca.tresor.v1.services.IMathOperator;
 @Service
 public class MathOperatorImpl implements IMathOperator {
 
-    @Override
-    public double doMath(double operand1, double operand2, String operation) throws InvalidOperationException {
+    public double calculate(double operand1, double operand2, String operation) throws InvalidOperationException {
         if ("/".equals(operation) && operand2 == (double) 0) {
             throw new InvalidOperationException("Cannot divide by 0");
         }
@@ -20,5 +19,10 @@ public class MathOperatorImpl implements IMathOperator {
             case "-" -> operand1 - operand2;
             default -> throw new RuntimeException("Unknown Operation");
         };
+    }
+
+    @Override
+    public double doMath(double operand1, double operand2, String operation) throws InvalidOperationException {
+        return 0;
     }
 }

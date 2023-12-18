@@ -15,6 +15,12 @@ public class DoMathRequestDto {
         this.operation = operation;
     }
 
+    public DoMathRequestDto() {
+        operand1= this.getOperand1();
+        operand2=this.getOperand2();
+        operation= this.getOperation();
+    }
+
 
     public double getOperand1() {
         return operand1;
