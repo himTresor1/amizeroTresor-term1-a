@@ -21,10 +21,10 @@ public class MathOperatorServiceTest {
         double operand2 = 5;
         String operation = "*";
         // When
-        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.calculate(operand1, operand2, operation);
         // Then
-        double expectedcalcResponse = 20.0;
-        assertEquals(expectedcalcResponse, calcResponse, 0.001); // Adjust the delta based on your precision requirements
+        double expected = 20.0;
+        assertEquals(expected, calcResponse, 0.001); // Adjust the delta based on your precision requirements
     }
 
     @Test
@@ -34,10 +34,10 @@ public class MathOperatorServiceTest {
         double operand2 = 3;
         String operation = "/";
         // When
-        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.calculate(operand1, operand2, operation);
         // Then
-        double expectedcalcResponse = 5.0;
-        assertEquals(expectedcalcResponse, calcResponse, 0.001);
+        double expected = 5.0;
+        assertEquals(expected, calcResponse, 0.001);
     }
 
     @Test
@@ -47,10 +47,10 @@ public class MathOperatorServiceTest {
         double operand2 = 7;
         String operation = "+";
         // When
-        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.calculate(operand1, operand2, operation);
         // Then
-        double expectedcalcResponse = 15.0;
-        assertEquals(expectedcalcResponse, calcResponse, 0.001);
+        double expected = 15.0;
+        assertEquals(expected, calcResponse, 0.001);
     }
 
     @Test
@@ -60,7 +60,7 @@ public class MathOperatorServiceTest {
         double operand2 = 6;
         String operation = "-";
         // When
-        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.calculate(operand1, operand2, operation);
         // Then
         double expectedcalcResponse = 4.0;
         assertEquals(expectedcalcResponse, calcResponse, 0.001);

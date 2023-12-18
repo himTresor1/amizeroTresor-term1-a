@@ -21,8 +21,4 @@ public class MathOperatorImpl implements IMathOperator {
         };
     }
 
-    @Override
-    public double doMath(double operand1, double operand2, String operation) throws InvalidOperationException {
-        return 0;
-    }
 }
