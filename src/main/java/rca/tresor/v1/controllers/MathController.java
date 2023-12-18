@@ -27,10 +27,10 @@ private MathOperatorImpl mathOperator;
         double operand1 = doMathRequest.getOperand1();
         double operand2 = doMathRequest.getOperand2();
         String operation = doMathRequest.getOperation();
-        double result = mathOperator.calculate(operand1, operand2, operation);
+        double calcResponse = mathOperator.calculate(operand1, operand2, operation);
 
         MathResponseDto mathResponse = new MathResponseDto();
-        mathResponse.setCalcResponse(result);
+        mathResponse.setCalcResponse(calcResponse);
 
         return mathResponse;
     }

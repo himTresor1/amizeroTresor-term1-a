@@ -21,10 +21,10 @@ public class MathOperatorServiceTest {
         double operand2 = 5;
         String operation = "*";
         // When
-        double result = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
         // Then
-        double expectedResult = 20.0;
-        assertEquals(expectedResult, result, 0.001); // Adjust the delta based on your precision requirements
+        double expectedcalcResponse = 20.0;
+        assertEquals(expectedcalcResponse, calcResponse, 0.001); // Adjust the delta based on your precision requirements
     }
 
     @Test
@@ -34,10 +34,10 @@ public class MathOperatorServiceTest {
         double operand2 = 3;
         String operation = "/";
         // When
-        double result = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
         // Then
-        double expectedResult = 5.0;
-        assertEquals(expectedResult, result, 0.001);
+        double expectedcalcResponse = 5.0;
+        assertEquals(expectedcalcResponse, calcResponse, 0.001);
     }
 
     @Test
@@ -47,10 +47,10 @@ public class MathOperatorServiceTest {
         double operand2 = 7;
         String operation = "+";
         // When
-        double result = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
         // Then
-        double expectedResult = 15.0;
-        assertEquals(expectedResult, result, 0.001);
+        double expectedcalcResponse = 15.0;
+        assertEquals(expectedcalcResponse, calcResponse, 0.001);
     }
 
     @Test
@@ -60,10 +60,10 @@ public class MathOperatorServiceTest {
         double operand2 = 6;
         String operation = "-";
         // When
-        double result = mathOperatorService.doMath(operand1, operand2, operation);
+        double calcResponse = mathOperatorService.doMath(operand1, operand2, operation);
         // Then
-        double expectedResult = 4.0;
-        assertEquals(expectedResult, result, 0.001);
+        double expectedcalcResponse = 4.0;
+        assertEquals(expectedcalcResponse, calcResponse, 0.001);
     }
 
 }
